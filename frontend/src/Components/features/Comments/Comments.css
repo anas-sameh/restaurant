@@ -1,0 +1,13 @@
+ments {
+    margin-top: 20px;
+    background-color: var( --background-color);
+    padding-top: 60px ;
+    margin-bottom: 0;
+
+}
+.head {
+    padding-bottom: 0px !important;
+}
+.slider {
+    padding-bottom: 30px !important;
+}

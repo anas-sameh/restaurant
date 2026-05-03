@@ -1,0 +1,44 @@
+.stay_with_us {
+    margin-top: 100px;
+}
+.form {
+   margin-top: 40px;
+    background-color: var(--background-color);
+}
+  .form_img img {
+    height: 400px;
+    object-fit: cover;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  .form_input input {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: color-mix(in srgb, var (--surface-color), transparent 20%);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 15px
+}
+.form_input textarea {
+    height: 100px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: color-mix(in srgb, var( --surface-color), transparent 20%);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+  

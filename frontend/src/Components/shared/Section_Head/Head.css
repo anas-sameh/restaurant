@@ -1,0 +1,21 @@
+.head {
+    padding-bottom: 60px;
+
+}
+
+.head h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    text-transform: uppercase;
+    font-family: var(--default-font);
+}
+
+.head span {
+    font-family: var(--heading-font);    
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--heading-color);
+    
+}

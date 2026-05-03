@@ -1,0 +1,13 @@
+
+.gallery_card {
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+}
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

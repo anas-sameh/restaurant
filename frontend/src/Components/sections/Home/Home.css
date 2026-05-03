@@ -1,0 +1,62 @@
+.Home {
+    background: #f2f2f2;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+.Home .details h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--accent-color) ;
+    font-family: var(--heading-font);
+    margin-top: 5px;
+   
+} 
+.Home .details p {
+    color:  color-mix(in srgb, var(--default-color), transparent 30%);
+    margin: 5px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.Home .BookTable_btn {
+    display: inline-block !important;
+}
+.Home .video_btn:hover {
+    color: var(--accent-color);
+}
+.Home .hero {
+    padding: 60px 0;
+}
+.Home .img img {
+    animation: up-down 0.8s ease-in-out infinite alternate both;
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); 
+    }
+  }
+
+
+ @media (min-width: 768px) {
+
+    .Home .img-p {
+        width: 41.66666667%
+     }
+ }
+ @media (max-width: 768px) {
+    .Home .details h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .Home .hero {
+        padding: 10px 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Home .img-p {
+       margin: auto;
+    }
+}

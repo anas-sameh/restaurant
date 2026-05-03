@@ -1,0 +1,215 @@
+* {
+  padding: 0;margin: 0;box-sizing: border-box;
+  
+}
+img{
+  width: 100%;
+  display: block;
+}
+:root {
+  --background-color: #f2f2f2;
+  --default-color: #212529;
+  --heading-color: #37373f;
+  --accent-color: #ce1212;
+ --surface-color : #ffffff;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC", sans-serif;
+  --nav-font: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Tablet and iPad Responsive Styles */
+@media (max-width: 1024px) {
+  /* General Container */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Navbar */
+  .navbar-nav {
+    gap: 10px !important;
+  }
+
+  .BookTable_btn_nav {
+    display: none;
+  }
+
+  .BookTable_btn_nav_res {
+    display: block !important;
+  }
+
+  /* Home Section */
+  .hero {
+    text-align: center;
+  }
+
+  .hero .details h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .img {
+    margin-top: 30px;
+  }
+
+  /* About Section */
+  .About .row {
+    flex-direction: column;
+  }
+
+  .About .first_col,
+  .About .second_col {
+    width: 100%;
+  }
+
+  .About .img {
+    margin-top: 30px;
+  }
+
+  /* Menu Section */
+  .menu_list ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+ 
+
+  /* Chefs Section */
+  .chefs___cards {
+    justify-content: center;
+  }
+
+  /* Events Section */
+  .events___cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Gallery Section */
+  .gallery___cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Section */
+  .contact___info {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  /* Home Section */
+  .hero .details h1 {
+    font-size: 2rem;
+  }
+
+  .hero .btns {
+    justify-content: center;
+  }
+
+  /* About Section */
+  .About .Why_box {
+    text-align: center;
+  }
+
+  .About .choose_cards {
+    padding: 0;
+  }
+
+  .menu-content {
+    margin: auto !important;}
+
+  /* Chefs Section */
+  .chef_card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Events Section */
+  .event_card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Gallery Section */
+  .gallery___cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Section */
+  .contact___form {
+    padding: 20px;
+  }
+
+  .contact___info {
+    padding: 20px;
+  }
+}
+
+/* Small Mobile Responsive Styles */
+@media (max-width: 576px) {
+
+
+  /* General */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Home Section */
+  .hero .details h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* About Section */
+  .About .Why_box {
+    padding: 20px;
+  }
+
+
+  /* Menu Section */
+  .menu_card {
+    margin: 10px 0;
+  }
+  .menu_list ul {
+    gap: 20px !important;
+  }
+
+  /* Chefs Section */
+  .chef_card {
+    margin: 10px 0;
+  }
+
+  /* Events Section */
+  .event_card {
+    margin: 10px 0;
+  }
+
+  /* Gallery Section */
+  .gallery___cards {
+    gap: 10px;
+  }
+
+  /* Contact Section */
+  .contact___form,
+  .contact___info {
+    padding: 15px;
+  }
+}
+
+
