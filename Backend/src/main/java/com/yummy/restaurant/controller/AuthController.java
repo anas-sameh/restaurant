@@ -24,17 +24,25 @@ public class AuthController {
         return userService.register(user);
     }
 
-    // login
-   @PostMapping("/login")
+ 
+    @PostMapping("/login")
     public AuthResponse login(@RequestBody User user) {
 
-        User loggedUser = userService.login(user.getEmail(), user.getPassword());
-        String token = jwtService.generateToken(loggedUser.getEmail(),loggedUser.getRole());
+        User loggedUser = userService.login(
+                user.getEmail(),
+                user.getPassword()
+        );
+
+        String token = jwtService.generateToken(
+                loggedUser.getEmail(),
+                loggedUser.getRole()
+        );
 
         return new AuthResponse(
                 token,
                 loggedUser.getName(),
-                loggedUser.getEmail()
+                loggedUser.getEmail(),
+                loggedUser.getRole()
         );
     }
 }

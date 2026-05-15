@@ -1,12 +1,9 @@
 package com.yummy.restaurant.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+@Table(name = "menu_items")
 public class MenuItem {
 
     @Id
@@ -14,5 +11,70 @@ public class MenuItem {
     private Long id;
 
     private String name;
-    private double price;
+
+    private Double price;
+
+    @Column(length = 1000)
+    private String description;
+
+    private String image;
+
+    public MenuItem() {
+    }
+
+    public MenuItem(
+            Long id,
+            String name,
+            Double price,
+            String description,
+            String image
+    ) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.image = image;
+    }
+
+    // getters & setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 }
